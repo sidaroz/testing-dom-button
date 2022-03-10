@@ -1,0 +1,27 @@
+{
+  "name": "fp_study_notes_javascript_in_the_browser",
+  "version": "1.0.0",
+  "description": "Study notes and lab for The JavaScript in the Browser lecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "dev": "concurrently \"watchify ./static/js/index.js -o bundle.js\" \"python -m http.server\" \"jest --watchAll\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getfutureproof/fp_study_notes_javascript_in_the_browser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/getfutureproof/fp_study_notes_javascript_in_the_browser/issues"
+  },
+  "homepage": "https://github.com/getfutureproof/fp_study_notes_javascript_in_the_browser#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "jest": "^26.6.3",
+    "watchify": "^4.0.0"
+  }
+}
